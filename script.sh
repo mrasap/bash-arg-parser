@@ -7,7 +7,7 @@ while [[ "$#" -gt 0 ]]; do case $1 in
 esac; shift; done
 
 # Check to see if the name has been given
-if [ -z $NAME ] || [[ $NAME =~ ^-.* ]]; 
+if [[ -z $NAME ]] || [[ $NAME =~ ^-.* ]]; 
   then echo "Error, name is not set."; exit 1;
 fi
 
